@@ -24,8 +24,6 @@ function timeToString(time) {
   let formattedMls = mls.toString().padStart(2, "0");
 
   return `${formattedMins}:${formattedSecs}:${formattedMls}`;
-
-
 }
 
 // variable declarations
@@ -34,3 +32,11 @@ let startTime;
 let elaspedTime = 0;
 let timeInterval;
 
+// modify innerHtml
+
+function print(timeText) {
+  document.getElementById("display").innerHTML = timeText;
+  console.log(timeText);
+}
+
+print("20:20:20")
