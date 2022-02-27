@@ -50,3 +50,17 @@ function start(){
     },10)
     showButton("PAUSE")
 }
+
+// pause function
+function pause(){
+    clearInterval(timeInterval)
+    showButton("PLAY")
+}
+// reset function
+
+function reset(){
+    clearInterval(timeInterval)
+    print("00:00:00")
+    elaspedTime=0;
+    showButton("PLAY")
+}
