@@ -82,3 +82,5 @@ let pauseBtn = document.getElementById("pauseBtn")
 let resetBtn = document.getElementById("resetBtn")
 
 playBtn.addEventListener("click", start)
+pauseBtn.addEventListener("click", pause)
+resetBtn.addEventListener("click", reset)
