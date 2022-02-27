@@ -64,3 +64,21 @@ function reset(){
     elaspedTime=0;
     showButton("PLAY")
 }
+
+// display btns
+
+function showButton(btnKey){
+    const btnToShow  =  btnKey  === "PLAY" ? playBtn : pauseBtn
+    const btnToHide = btnKey === "PLAY" ? pauseBtn : playBtn
+
+    btnToShow.style.display = "block"
+    btnToHide.style.display =" none"
+}
+
+// event listeners
+
+let playBtn = document.getElementById("playBtn")
+let pauseBtn = document.getElementById("pauseBtn")
+let resetBtn = document.getElementById("resetBtn")
+
+playBtn.addEventListener("click", start)
