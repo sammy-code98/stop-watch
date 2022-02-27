@@ -36,7 +36,17 @@ let timeInterval;
 
 function print(timeText) {
   document.getElementById("display").innerHTML = timeText;
-  console.log(timeText);
+//   console.log(timeText);
 }
 
-print("20:20:20")
+// print("20:20:20")
+
+// start function
+function start(){
+    startTime = Date.now() - elaspedTime
+    timeInterval = setInterval(function printTime(){
+        elaspedTime = Date.now() - startTime
+        print(timeToString(elaspedTime))
+    },10)
+    showButton("PAUSE")
+}
