@@ -18,6 +18,7 @@ function timeToString(time) {
   // get milisecond
   let mlsDiff = (secDiff - secs) * 100;
   let mls = Math.floor(mlsDiff);
+//   use padStart to get double digits
 
   let formattedMins = mins.toString().padStart(2, "0");
   let formattedSecs = secs.toString().padStart(2, "0");
