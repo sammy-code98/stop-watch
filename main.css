@@ -34,31 +34,45 @@ h1 {
 }
 
 .header {
-    font-weight:900;
-    color: #f2c94c;
-    text-shadow: 0 0 0px #fff, 0 0 50px #f2c94c;
+  font-weight: 900;
+  color: #f2c94c;
+  text-shadow: 0 0 0px #fff, 0 0 50px #f2c94c;
+}
+.btnControls {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
 
+button {
+  cursor: pointer;
+  background: transparent;
+  padding: 0;
+  border: none;
+  margin: 0;
+  outline: none;
 }
-.btnControls{
-    display: flex;
-    justify-content: space-between;
-    width:150px;
+#playBtn {
+  display: block;
+}
+#pauseBtn {
+  display: none;
+}
+#resetBtn {
+  margin-top: 8px;
 }
 
-button{
-    cursor:pointer;
-    background:transparent;
-    padding:0;
-    border:none;
-    margin:0;
-    outline:none;
-}
-#playBtn{
-    display: block;
-}
-#pauseBtn{
-    display:none;
-}
-#resetBtn{
-    margin-top: 8px;
+@media only screen and (max-width:768px) {
+  h1{
+    font-size:35px;
+    padding:0px;
+  }
+  .circle {
+    height: 300px;
+    width: 300px;
+    margin-top:80px;
+  }
+  .btnControls{
+    margin-top:30px;
+  }
 }
